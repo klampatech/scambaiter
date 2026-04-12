@@ -1,0 +1,18 @@
+[Unit]
+Description=Telegram Scambaiter
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=kyle
+WorkingDirectory=/home/kyle/scambaiter
+ExecStart=/usr/bin/python main.py
+Restart=on-failure
+RestartSec=15
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,35 @@
+# Credentials (NEVER commit)
+config.py
+
+# Environment
+.env
+.env.*
+
+# Sessions & auth
+*.session
+*.session-journal
+*.session.bad
+.auth_code
+
+# Database
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/dev
+*.pyc
+.pytest_cache/
